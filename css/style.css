@@ -1,0 +1,68 @@
+/* ================================= 
+  Base Element Styles
+
+Copy/pasted this from Treehouse - I think it's a good idea to include these main element comments so you can see what is going on on the page.
+==================================== */
+
+/* This part is to make sure that all of the page elements stay in their respective boxes */
+* {
+  box-sizing: border-box;
+}
+
+body {
+    line-height: 1.4;
+    background-color: burlywood;
+    color: darkgreen;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+    margin: 0.5em;
+}
+
+/* ---- Layout Containers ---- */
+
+.container {
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+}
+
+.main-header {
+    padding: 0.7em 0;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.main-footer {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 0.7em 0;
+}
+
+/* ---- Part of the page ---- */
+
+.pluto-list {
+    color: darkmagenta;
+    list-style-type: circle;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 600px) {
+    .wrap {
+        min-height: calc(100vh - 44.38px);
+    }
+    
+    .container {
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
