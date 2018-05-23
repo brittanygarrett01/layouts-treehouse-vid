@@ -10,9 +10,30 @@ Copy/pasted this from Treehouse - I think it's a good idea to include these main
 }
 
 body {
-    line-height: 1.4;
+    line-height: 1.6;
     background-color: burlywood;
     color: darkgreen;
+    font-family: 'Varela Round', sans-serif;
+}
+
+p {
+    font-size: .95em;
+    margin-bottom: 1.5em;
+}
+
+h2,
+h3,
+a {
+    color: black;
+}
+
+h2,
+h3 {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* ================================= 
@@ -22,47 +43,89 @@ body {
 /* ---- Navigation ---- */
 
 .name {
-    margin: 0.5em;
+    font-size: 1.25em;
+}
+
+.name,
+.main-nav li {
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.main-nav a:hover {
+    color:aqua;
+}
+
+.name a,
+.main-nav a {
+    padding: 10px 15px;
+    display: block;
 }
 
 /* ---- Layout Containers ---- */
 
 .container {
-    padding-left: 1.1em;
-    padding-right: 1.1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .main-header {
-    padding: 0.7em 0;
-    background-color: aliceblue;
-    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    background: aliceblue;
+    margin-bottom: 30px;
 }
 
 .main-footer {
-    background-color: aliceblue;
+    background: aliceblue;
     text-align: center;
-    padding: 0.7em 0;
+    padding: 2em 0;
 }
 
 /* ---- Part of the page ---- */
 
 .pluto-list {
     color: darkmagenta;
-    list-style-type: circle;
+    list-style-type: none;
 }
 
 /* ================================= 
   Media Queries
 ==================================== */
 
-@media (min-width: 600px) {
+@media (min-width: 769px) {
     .wrap {
-        min-height: calc(100vh - 44.38px);
+        min-height: calc(100vh - 89px);
     }
     
     .container {
         width: 80%;
-        max-width: 1000px;
+        max-width: 1150px;
         margin: 0 auto;
+    }
+    
+    .name,
+    .main-nav,
+    .main-nav li {
+        display: inline-block;
+    }
+    
+    .name {
+        width: 240px;
+        margin-right: 50px;
+    }
+    
+    .main-nav li {
+        margin-right: 12px;
+    }
+    
+    .col {
+        display: inline-block;
+        width: 50%;
+        margin-right: -4px;
+        vertical-align: top;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
